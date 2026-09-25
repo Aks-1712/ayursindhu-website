@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AyurSindhu — Rooted in Tradition. Made for Today.</title>
+  <meta name="description" content="AyurSindhu is a modern Ayurvedic products brand inspired by traditional Indian Ayurvedic knowledge and presented for today's customers.">
+  <meta name="theme-color" content="#12241C">
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif) & Plus Jakarta Sans (Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Brand Announcement">
+    <div class="announcement-content">
+      <div class="announcement-item">
+        <span>Complimentary insured shipping across India on orders above ₹999</span>
+      </div>
+      <div class="announcement-dot"></div>
+      <div class="announcement-item">
+        <span>Pure botanical formulations • Consciously sourced</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Modern Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrapper">
+      <!-- AyurSindhu Logo -->
+      <a href="#" class="brand-logo" aria-label="AyurSindhu Home">
+        <img src="logo.png" alt="AyurSindhu - आयुर्वेदसिन्धुरूपेण" class="site-logo-img">
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">Our Story</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#ayurveda" class="nav-link">Ayurveda</a></li>
+          <li><a href="#journal" class="nav-link">Journal</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Cart + Shop Now CTA) -->
+      <div class="nav-actions">
+        <button class="cart-toggle-btn" id="cartToggleBtn" aria-label="Open Ritual Bag">
+          <svg class="cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge" id="cartBadge">1</span>
+        </button>
+
+        <a href="#products" class="btn btn-primary btn-sm">Shop Now</a>
+
+        <!-- Mobile Hamburger Toggle Button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Slide-Down Drawer Navigation -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <img src="logo.png" alt="AyurSindhu - आयुर्वेदसिन्धुरूपेण" style="height: 64px; width: auto; display: inline-block;">
+    </div>
+    <ul class="mobile-nav-menu">
+      <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">Our Story</a></li>
+      <li><a href="#products" class="mobile-nav-link">Products</a></li>
+      <li><a href="#ayurveda" class="mobile-nav-link">Ayurveda</a></li>
+      <li><a href="#journal" class="mobile-nav-link">Journal</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <a href="#products" class="btn btn-primary" style="width: 200px;">Explore Collection</a>
+      <p style="font-size: 0.8125rem; color: var(--text-muted);">Rooted in Tradition. Made for Today.</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Left Side: Editorial Headline & Actions -->
+        <div class="hero-content">
+          <div class="eyebrow eyebrow-sanskrit">आयुर्वेदसिन्धुरूपेण</div>
+          
+          <h1 class="hero-title">
+            Ancient Wisdom.<br>
+            Made for <span class="serif-italic">Today.</span>
+          </h1>
+
+          <p class="hero-description">
+            Thoughtfully crafted Ayurvedic products inspired by traditional Indian knowledge and designed for modern everyday wellness.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">Explore Products</a>
+            <a href="#about" class="btn btn-secondary">Discover Our Story</a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="hero-trust-row">
+            <div class="trust-item">
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              <span>100% Botanical Purity</span>
+            </div>
+            <div class="trust-item">
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+              <span>Consciously Formulated</span>
+            </div>
+            <div class="trust-item">
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 14 14"/>
+              </svg>
+              <span>Time-Honored Rituals</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Lord Dhanvantari — The Origin of Ayurveda -->
+        <div class="hero-visual-wrapper">
+          <div class="hero-visual-card">
+            <img src="hero-dhanvantari.jpg" alt="Lord Dhanvantari — Sacred Origin of Ayurveda and AyurSindhu" class="hero-img">
+          </div>
+          <!-- Refined Floating Badge -->
+          <div class="hero-floating-badge">
+            <span class="badge-subtitle">The Sacred Origin</span>
+            <div class="badge-title">Lord Dhanvantari &bull; Father of Ayurvedic Healing</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PRODUCT PREVIEW SECTION
+         ========================================== -->
+    <section class="product-section" id="products">
+      <div class="container">
+        <header class="section-header">
+          <div class="eyebrow">SIGNATURE FORMULATIONS</div>
+          <h2 class="section-title">Rooted in Knowledge. Created for Modern Living.</h2>
+          <p class="section-subtitle">
+            AyurSindhu brings traditional Ayurvedic wisdom into thoughtfully presented modern products, balancing everyday simplicity with authentic therapeutic depth.
+          </p>
+        </header>
+
+        <!-- Category Filter Pills -->
+        <div class="product-filters" role="tablist" aria-label="Product categories">
+          <button class="filter-pill active" data-filter="all">All Formulations</button>
+          <button class="filter-pill" data-filter="oral-care">Oral Care</button>
+          <button class="filter-pill" data-filter="hair-scalp">Hair & Scalp</button>
+          <button class="filter-pill" data-filter="facial-radiance">Facial Radiance</button>
+          <button class="filter-pill" data-filter="daily-rituals">Daily Rituals</button>
+        </div>
+
+        <!-- Product Cards Grid (4 featured products) -->
+        <div class="product-grid">
+
+          <!-- Product 1: DantKanti -->
+          <article class="product-card" data-category="oral-care">
+            <div class="product-img-wrapper">
+              <span class="product-tag coming-soon-tag">Coming Soon</span>
+              <img src="product-coming-soon.jpg" alt="AyurSindhu DantKanti Oral Care - Coming Soon" class="product-img">
+              <button class="quick-view-trigger" data-id="dantkanti" aria-label="Quick view DantKanti">Quick View</button>
+            </div>
+            <div class="product-body">
+              <span class="product-volume">100g & 250ml Set</span>
+              <h3 class="product-title">DantKanti</h3>
+              <p class="product-desc">
+                Botanical tooth and gum elixir combining Babool, Bakul, Akarkara, and Clove for daily oral wellness.
+              </p>
+              <div class="product-botanicals">Key herbs: Babool, Akarkara, Clove & Wild Mint</div>
+              <div class="product-footer">
+                <span class="product-price">₹495</span>
+                <button class="btn-add-ritual coming-soon-btn" data-id="dantkanti">Coming Soon</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2: Snuhyadi Tel -->
+          <article class="product-card" data-category="hair-scalp">
+            <div class="product-img-wrapper">
+              <span class="product-tag coming-soon-tag">Coming Soon</span>
+              <img src="product-coming-soon.jpg" alt="AyurSindhu Snuhyadi Tel Hair Oil - Coming Soon" class="product-img">
+              <button class="quick-view-trigger" data-id="snuhyadi-tel" aria-label="Quick view Snuhyadi Tel">Quick View</button>
+            </div>
+            <div class="product-body">
+              <span class="product-volume">100ml / 3.38 fl oz</span>
+              <h3 class="product-title">Snuhyadi Tel</h3>
+              <p class="product-desc">
+                Traditional restorative hair and scalp oil in cold-pressed black sesame to nourish roots and calm tension.
+              </p>
+              <div class="product-botanicals">Key herbs: Snuhyadi, Black Sesame, Amla & Bhringraj</div>
+              <div class="product-footer">
+                <span class="product-price">₹1,250</span>
+                <button class="btn-add-ritual coming-soon-btn" data-id="snuhyadi-tel">Coming Soon</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3: Shuddhi Ayurvedic Face Wash -->
+          <article class="product-card" data-category="facial-radiance">
+            <div class="product-img-wrapper">
+              <span class="product-tag coming-soon-tag">Coming Soon</span>
+              <img src="product-coming-soon.jpg" alt="AyurSindhu Shuddhi Ayurvedic Face Wash - Coming Soon" class="product-img">
+              <button class="quick-view-trigger" data-id="detan-wash" aria-label="Quick view Shuddhi Face Wash">Quick View</button>
+            </div>
+            <div class="product-body">
+              <span class="product-volume">100 ml</span>
+              <h3 class="product-title">Shuddhi Face Wash</h3>
+              <p class="product-desc">
+                Pure care for naturally fresh & healthy skin. Cleanses, purifies, and refreshes with Neem, Tulsi, Tea Tree & Aloe Vera.
+              </p>
+              <div class="product-botanicals">Key herbs: Neem • Tulsi • Tea Tree • Aloe Vera</div>
+              <div class="product-footer">
+                <span class="product-price">₹495</span>
+                <button class="btn-add-ritual coming-soon-btn" data-id="detan-wash">Coming Soon</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 4: Ayurvedic Wellness Essentials -->
+          <article class="product-card" data-category="daily-rituals">
+            <div class="product-img-wrapper">
+              <span class="product-tag coming-soon-tag">Coming Soon</span>
+              <img src="product-coming-soon.jpg" alt="AyurSindhu Ayurvedic Wellness Essentials - Coming Soon" class="product-img">
+              <button class="quick-view-trigger" data-id="wellness-essentials" aria-label="Quick view Ayurvedic Wellness Essentials">Quick View</button>
+            </div>
+            <div class="product-body">
+              <span class="product-volume">50ml / 1.7 fl oz Jar</span>
+              <h3 class="product-title">Ayurvedic Wellness Essentials</h3>
+              <p class="product-desc">
+                Restorative night balm formulated with Ashwagandha and clarifying botanicals for deep renewal.
+              </p>
+              <div class="product-botanicals">Key herbs: Ashwagandha, Gotu Kola & Clarified Essence</div>
+              <div class="product-footer">
+                <span class="product-price">₹1,850</span>
+                <button class="btn-add-ritual coming-soon-btn" data-id="wellness-essentials">Coming Soon</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT SECTION (Tradition, Reimagined.)
+         ========================================== -->
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <!-- Left: Spiritual Lineage & Heritage Visual -->
+        <div class="about-visual-box">
+          <div class="about-img-frame">
+            <img src="about-editorial.jpg" alt="Param Pujya Shri Ramesh Maharaj Gorekar — Spiritual Lineage of AyurSindhu" class="about-img">
+          </div>
+          <div class="about-quote-box">
+            <p>“Sacred tradition and spiritual discipline anchor true Ayurvedic wisdom.”</p>
+            <span>Param Pujya Shri Ramesh Maharaj Gorekar</span>
+          </div>
+        </div>
+
+        <!-- Right: Story Narrative & Pillars -->
+        <div class="about-content">
+          <div class="eyebrow">OUR HERITAGE & SACRED LINEAGE</div>
+          <h2 class="about-title">Tradition, Reimagined.</h2>
+          
+          <p class="about-copy">
+            Rooted in sacred tradition and spiritual discipline, Ayursindhu represents the living lineage and timeless wisdom embodied by Param Pujay Shri Ramesh Maharaj Gorekar. His presence anchors the brand in genuine heritage, carrying forward ancestral Ayurvedic knowledge with devotion and purpose.
+          </p>
+
+          <p class="about-copy" style="margin-top: -0.75rem; font-size: 1.05rem;">
+            AyurSindhu brings the timeless principles of Ayurveda into products designed for the rhythm of modern life. We respect traditional knowledge while focusing on thoughtful presentation, quality, simplicity, and everyday usability.
+          </p>
+
+          <div class="about-pillars">
+            <div class="about-pillar-item">
+              <div class="about-pillar-bullet"></div>
+              <div class="about-pillar-text">
+                <h4>Sacred Lineage</h4>
+                <p>Anchored in ancestral spiritual discipline and purpose.</p>
+              </div>
+            </div>
+            <div class="about-pillar-item">
+              <div class="about-pillar-bullet"></div>
+              <div class="about-pillar-text">
+                <h4>Authentic Formulations</h4>
+                <p>Derived from classical recipes with zero synthetic shortcuts.</p>
+              </div>
+            </div>
+            <div class="about-pillar-item">
+              <div class="about-pillar-bullet"></div>
+              <div class="about-pillar-text">
+                <h4>Pure Botanical Origin</h4>
+                <p>Whole herbs sourced directly from native Indian soils.</p>
+              </div>
+            </div>
+            <div class="about-pillar-item">
+              <div class="about-pillar-bullet"></div>
+              <div class="about-pillar-text">
+                <h4>Conscious Modernity</h4>
+                <p>Sensory textures created for today’s daily routines.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#philosophy" class="btn btn-secondary">Our Story &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         WHY AYURSINDHU SECTION
+         ========================================== -->
+    <section class="why-section" id="why">
+      <div class="container">
+        <header class="section-header">
+          <div class="eyebrow">THE AYURSINDHU DISTINCTION</div>
+          <h2 class="section-title">Rooted in Care. Built on Truth.</h2>
+          <p class="section-subtitle">
+            We hold ourselves to a standard of quiet excellence, where every formulation reflects deep knowledge and modern purpose.
+          </p>
+        </header>
+
+        <div class="features-grid">
+          <!-- Feature 1: Traditional Knowledge -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Traditional Knowledge</h3>
+            <p class="feature-desc">Inspired by the depth of Ayurvedic tradition and the foundational treatises of Indian natural wellness.</p>
+          </div>
+
+          <!-- Feature 2: Modern Approach -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Modern Approach</h3>
+            <p class="feature-desc">Designed for today's lifestyle and expectations—fast-absorbing, pleasant to use, and effortless to incorporate.</p>
+          </div>
+
+          <!-- Feature 3: Thoughtful Formulation -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2v20"></path>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Thoughtful Formulation</h3>
+            <p class="feature-desc">Focused on carefully considered ingredients and product experiences, omitting unnecessary fillers and perfumes.</p>
+          </div>
+
+          <!-- Feature 4: Premium Experience -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="feature-title">Premium Experience</h3>
+            <p class="feature-desc">From formulation to packaging, every detail matters. Tactile amber glass, brushed metal closures, and timeless design.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         BRAND PHILOSOPHY SECTION (Statement)
+         ========================================== -->
+    <section class="philosophy-section" id="philosophy">
+      <svg class="philosophy-bg-motif" viewBox="0 0 100 100" fill="none" stroke="currentColor">
+        <circle cx="50" cy="50" r="48" stroke-width="0.75"/>
+        <circle cx="50" cy="50" r="36" stroke-width="0.5"/>
+        <path d="M50 2v96M2 50h96" stroke-width="0.5"/>
+      </svg>
+      <div class="philosophy-wrapper">
+        <div class="eyebrow">THE AYURSINDHU MANIFESTO</div>
+        <h2 class="philosophy-quote">
+          “Rooted in Tradition.<br>
+          Made for <span class="serif-italic">Today.</span>”
+        </h2>
+        <div class="philosophy-gold-rule"></div>
+        <p class="philosophy-subtext">
+          Ayurveda is not a nostalgic relic of the past—it is a living, breathing philosophy of balance. We exist to honor this sacred knowledge through refined craft and contemporary mindfulness.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         AYURVEDA SECTION (Wisdom Behind the Brand)
+         ========================================== -->
+    <section class="ayurveda-section" id="ayurveda">
+      <div class="container">
+        <header class="section-header">
+          <div class="eyebrow">FOUNDATIONS OF WELLNESS</div>
+          <h2 class="section-title">The Wisdom Behind the Brand</h2>
+          <p class="section-subtitle">
+            Ayurveda translates to the science of life (<em>Ayu</em> = Life, <em>Veda</em> = Knowledge). Rather than treating concerns in isolation, it seeks constitutional balance across body, mind, and daily cadence.
+          </p>
+        </header>
+
+        <!-- Dosha Harmony Interactive Switcher -->
+        <div class="dosha-tab-nav" role="tablist">
+          <button class="dosha-tab-btn active" data-dosha="vata">Vata Harmonization</button>
+          <button class="dosha-tab-btn" data-dosha="pitta">Pitta Harmonization</button>
+          <button class="dosha-tab-btn" data-dosha="kapha">Kapha Harmonization</button>
+        </div>
+
+        <div class="dosha-content-card">
+          <!-- Left: Dosha Narrative & Elements -->
+          <div class="dosha-info-col">
+            <span class="dosha-info-tag">CONSTITUTIONAL ALIGNMENT</span>
+            <h3 class="dosha-title" id="doshaTitle">Vata Harmonization (Air & Ether)</h3>
+            <p class="dosha-desc" id="doshaDesc">
+              Characterized by lightness, movement, and dryness. When balanced, Vata embodies creativity and vitality; when elevated, it calls for deeply nourishing, warm, and grounding herbal elixirs.
+            </p>
+
+            <div class="dosha-attributes">
+              <div class="dosha-attr-box">
+                <span class="attr-label">Primary Elements</span>
+                <span class="attr-val" id="doshaElement">Air & Ether</span>
+              </div>
+              <div class="dosha-attr-box">
+                <span class="attr-label">Natural Qualities</span>
+                <span class="attr-val" id="doshaQuality">Dry, Light, Mobile</span>
+              </div>
+              <div class="dosha-attr-box">
+                <span class="attr-label">Resonant Season</span>
+                <span class="attr-val" id="doshaSeason">Autumn / Early Winter</span>
+              </div>
+              <div class="dosha-attr-box">
+                <span class="attr-label">Herbal Action</span>
+                <span class="attr-val">Snehana (Nourishing)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Ritual Recommendation Box -->
+          <div class="dosha-ritual-box">
+            <h4 class="ritual-box-heading" id="ritualBoxHeading">Nourishing Ojas & Root Scalp Ritual</h4>
+            <p class="ritual-box-p" id="ritualBoxP">
+              Incorporate warm herbal oils and restorative scalp massage to steady restless energy and seal deep biological hydration.
+            </p>
+
+            <div class="ritual-recommended-product">
+              <img src="product-snuhyadi-tel.jpg" alt="Recommended Formulation" class="rec-thumb" id="recProductImg">
+              <div class="rec-meta">
+                <h5 id="recProductName">Snuhyadi Tel</h5>
+                <span id="recProductMeta">Restorative Botanical Scalp & Hair Oil</span>
+              </div>
+              <button class="btn btn-secondary btn-sm" id="recProductBtn" style="margin-left: auto;">View Formulation</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         JOURNAL SECTION
+         ========================================== -->
+    <section class="journal-section" id="journal">
+      <div class="container">
+        <header class="section-header">
+          <div class="eyebrow">EDITORIAL & ESSAYS</div>
+          <h2 class="section-title">From the World of Ayurveda</h2>
+          <p class="section-subtitle">
+            Perspectives on intentional living, botanical traditions, and modern wellness rituals.
+          </p>
+        </header>
+
+        <div class="journal-grid">
+          <!-- Article 1 -->
+          <article class="journal-card">
+            <div class="journal-img-wrapper">
+              <img src="about-editorial.jpg" alt="Understanding Ayurveda in Modern Life" class="journal-img">
+            </div>
+            <div class="journal-body">
+              <div class="journal-meta">
+                <span>4 Min Read</span>
+                <span>•</span>
+                <span>Philosophy</span>
+              </div>
+              <h3 class="journal-title">Understanding Ayurveda in Modern Life</h3>
+              <p class="journal-excerpt">
+                Why ancient Indian daily rhythms (*Dinacharya*) offer an effective, grounding compass in an age of hyper-connectivity and sensory fatigue.
+              </p>
+              <a href="#" class="journal-link read-journal-btn" data-article="1">Read Journal Entry &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="journal-card">
+            <div class="journal-img-wrapper">
+              <img src="product-detan-wash.jpg" alt="Traditional Ingredients, Modern Rituals" class="journal-img">
+            </div>
+            <div class="journal-body">
+              <div class="journal-meta">
+                <span>5 Min Read</span>
+                <span>•</span>
+                <span>Botanicals</span>
+              </div>
+              <h3 class="journal-title">Traditional Ingredients, Modern Rituals</h3>
+              <p class="journal-excerpt">
+                A closer look into classical Rasayana botanicals—from wild harvested amla to cold-pressed black sesame and Kashmiri saffron.
+              </p>
+              <a href="#" class="journal-link read-journal-btn" data-article="2">Read Journal Entry &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="journal-card">
+            <div class="journal-img-wrapper">
+              <img src="hero-products.jpg" alt="The Story Behind AyurSindhu" class="journal-img">
+            </div>
+            <div class="journal-body">
+              <div class="journal-meta">
+                <span>6 Min Read</span>
+                <span>•</span>
+                <span>Heritage</span>
+              </div>
+              <h3 class="journal-title">The Story Behind AyurSindhu</h3>
+              <p class="journal-excerpt">
+                Bridging the gap between archaic herbal shops and generic modern cosmetics to establish a contemporary benchmark for Indian wellness.
+              </p>
+              <a href="#" class="journal-link read-journal-btn" data-article="3">Read Journal Entry &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         NEWSLETTER / CTA SECTION
+         ========================================== -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="eyebrow">COMMUNITY & INSIGHTS</div>
+          <h2 class="cta-title">Begin Your AyurSindhu Journey.</h2>
+          <p class="cta-text">
+            Discover a modern expression of timeless Ayurvedic wisdom. Join our circle for seasonal guides, ritual guides, and exclusive first access.
+          </p>
+
+          <form class="newsletter-form" id="newsletterForm" aria-label="Subscribe to newsletter">
+            <input type="email" class="newsletter-input" placeholder="Enter your email address..." required aria-label="Email address">
+            <button type="submit" class="btn btn-primary">Explore AyurSindhu</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       DARK FOREST GREEN FOOTER
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Summary Column -->
+          <a href="#" class="footer-brand-logo" aria-label="AyurSindhu Home">
+            <img src="logo-light.png" alt="AyurSindhu - आयुर्वेदसिन्धुरूपेण" class="footer-logo-img">
+          </a>
+          <p class="footer-brand-desc">
+            AyurSindhu is a modern Ayurvedic products brand inspired by traditional Indian Ayurvedic knowledge and presented for today's customers.
+          </p>
+          <div class="footer-tagline-quote">
+            “Rooted in Tradition. Made for Today.”
+          </div>
+        </div>
+
+        <!-- Navigation Column -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">Our Story</a></li>
+            <li><a href="#products" class="footer-link">Formulations</a></li>
+            <li><a href="#ayurveda" class="footer-link">The Ayurveda Guide</a></li>
+            <li><a href="#journal" class="footer-link">Journal & Essays</a></li>
+          </ul>
+        </div>
+
+        <!-- Formulations Column -->
+        <div>
+          <h4 class="footer-col-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="#products" class="footer-link">DantKanti Oral Care</a></li>
+            <li><a href="#products" class="footer-link">Snuhyadi Tel Scalp Nectar</a></li>
+            <li><a href="#products" class="footer-link">Shuddhi Ayurvedic Face Wash</a></li>
+            <li><a href="#products" class="footer-link">Ayurvedic Wellness Essentials</a></li>
+            <li><a href="#products" class="footer-link">Daily Ritual Sets</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Ethics Column -->
+        <div>
+          <h4 class="footer-col-title">Contact & Care</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:concierge@ayursindhu.com" class="footer-link">concierge@ayursindhu.com</a></li>
+            <li><a href="#" class="footer-link">Botanical Sourcing Policy</a></li>
+            <li><a href="#" class="footer-link">Packaging & Recycling</a></li>
+            <li><a href="#" class="footer-link">Shipping & Delivery</a></li>
+            <li><a href="#" class="footer-link">Privacy & Terms</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 AyurSindhu. All rights reserved. Made in India with devotion.</p>
+        <div class="footer-social-links">
+          <a href="#" class="social-icon-btn" aria-label="AyurSindhu on Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="mailto:concierge@ayursindhu.com" class="social-icon-btn" aria-label="Send Email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       SLIDE-OVER RITUAL CART DRAWER
+       ========================================== -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Your Ritual Bag">
+    <div class="cart-drawer-header">
+      <h3 class="cart-drawer-title">Your Ritual Bag</h3>
+      <button class="drawer-close-btn" id="closeCartBtn" aria-label="Close Bag">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Free Shipping Progress Bar -->
+    <div class="cart-free-shipping-bar">
+      <span id="shippingText">Add <strong>₹504</strong> more for complimentary insured delivery.</span>
+      <div class="shipping-progress-track">
+        <div class="shipping-progress-fill" id="shippingProgressFill"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items Container -->
+    <div class="cart-items-list" id="cartItemsList">
+      <!-- Injected via JavaScript -->
+    </div>
+
+    <!-- Cart Drawer Footer -->
+    <div class="cart-drawer-footer">
+      <div class="cart-subtotal-row">
+        <span class="subtotal-label">Subtotal</span>
+        <span class="subtotal-amount" id="cartSubtotal">₹495</span>
+      </div>
+      <button class="btn btn-primary" style="width: 100%; margin-bottom: 0.75rem;" onclick="alert('Proceeding to AyurSindhu secure checkout.');">
+        Proceed to Checkout
+      </button>
+      <p style="font-size: 0.75rem; text-align: center; color: var(--text-muted);">
+        Complimentary samples included with every order.
+      </p>
+    </div>
+  </aside>
+
+  <!-- ==========================================
+       PRODUCT QUICK VIEW MODAL
+       ========================================== -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="quick-view-modal" id="quickViewModal" role="dialog" aria-modal="true">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close details">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-img-col">
+        <img src="" alt="" class="modal-product-img" id="modalProductImg">
+      </div>
+
+      <div class="modal-details-col">
+        <span class="modal-badge" id="modalBadge">SIGNATURE FORMULATION</span>
+        <h2 class="modal-title" id="modalTitle">Product Title</h2>
+        <div class="modal-price" id="modalPrice">₹0</div>
+        
+        <p class="modal-desc" id="modalDesc">Description goes here.</p>
+        
+        <div class="modal-ritual-note" id="modalRitualNote">
+          <strong>The Daily Ritual:</strong> Instructions.
+        </div>
+
+        <div style="font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 2rem;">
+          <strong>Key Botanicals:</strong> <span id="modalIngredients">Botanicals</span>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn btn-primary" id="modalAddBtn" style="flex-grow: 1;">Add to Ritual Bag</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="main.js"></script>
+</body>
+</html>
+
